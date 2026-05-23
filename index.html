@@ -195,7 +195,7 @@
       .hero{grid-template-columns:1fr;min-height:auto;padding-top:180px;gap:0}
       .hero-img-wrap{max-height:none;overflow:visible;display:flex;flex-direction:column;align-items:center;margin-top:0;margin-bottom:8px;position:relative;padding-top:0}
       .hero-img-desktop{display:none}
-      .hero-img-mobile{display:block;width:120px;height:160px;border-radius:0;object-fit:cover;object-position:top center;margin-top:12px}
+      .hero-img-mobile{display:block;width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:top center;margin-top:12px;box-shadow:0 8px 28px rgba(0,0,0,.13)}
       .hero-img-accent{display:none}
       .hero-badge-over{display:inline-flex;font-size:.68rem;padding:6px 13px;margin-bottom:0;position:static;transform:none;white-space:nowrap}
       .hero-name-tag{display:block}
@@ -213,7 +213,10 @@
       .nav-links{display:none}
       .nav-cta{display:none!important}
       .burger{display:flex}
-      .hero{padding-top:170px}
+      .hero{padding-top:100px}
+      nav{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:none;box-shadow:none}
+      nav.scrolled{background:transparent;box-shadow:none;border-bottom:none}
+      .lang-toggle{display:none}
       .m-br{display:block}
       .process-steps{grid-template-columns:1fr}
       .footer-inner{flex-direction:column;align-items:flex-start}
@@ -305,7 +308,7 @@
       <span data-ru="Коучинг по самореализации" data-kk="Өзін-өзі жүзеге асыру коучингі">Коучинг по самореализации</span>
     </div>
     <img class="hero-img hero-img-desktop" src="ermek.jpg" alt="Ермек — коуч по самореализации">
-    <img class="hero-img hero-img-mobile" src="Group 26.png" alt="Ермек — коуч по самореализации">
+    <img class="hero-img hero-img-mobile" src="ermek 1.png" alt="Ермек — коуч по самореализации">
     <div class="hero-img-accent"></div>
     <div class="hero-name-tag">Ермек <span>Коуч</span></div>
   </div>
