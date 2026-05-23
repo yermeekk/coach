@@ -175,8 +175,9 @@
     /* RESPONSIVE */
     @media(max-width:1024px){
       .hero{grid-template-columns:1fr;min-height:auto;padding-top:110px}
-      .hero-img-wrap{max-height:360px;overflow:hidden}
-      .hero-img{aspect-ratio:16/9}
+      .hero-img-wrap{max-height:none;overflow:visible;display:flex;justify-content:center}
+      .hero-img{width:180px;height:180px;aspect-ratio:1/1;border-radius:50%;object-position:top center;box-shadow:0 0 0 5px rgba(201,168,76,.25),0 8px 32px rgba(0,0,0,.12)}
+      .hero-img-accent{display:none}
       .about-inner{grid-template-columns:1fr;gap:40px}
       .packages-grid{grid-template-columns:1fr}
       .process-steps{grid-template-columns:1fr 1fr;gap:32px}
