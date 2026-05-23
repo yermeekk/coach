@@ -40,7 +40,6 @@
     .container{max-width:1140px;margin:0 auto;padding:0 28px}
     .section{padding:96px 0}
     .lbl{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
-    .lbl::before{content:'';display:block;width:22px;height:2px;background:var(--gold)}
     .fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
     .fade-up.visible{opacity:1;transform:translateY(0)}
     .text-gold{color:var(--gold)}
@@ -175,7 +174,7 @@
     /* RESPONSIVE */
     @media(max-width:1024px){
       .hero{grid-template-columns:1fr;min-height:auto;padding-top:110px}
-      .hero-img-wrap{max-height:none;overflow:visible;display:flex;justify-content:center;margin-top:24px}
+      .hero-img-wrap{max-height:none;overflow:visible;display:flex;justify-content:center;margin-top:48px}
       .hero-img{width:180px;height:180px;aspect-ratio:1/1;border-radius:50%;object-position:top center;box-shadow:0 0 0 5px rgba(201,168,76,.25),0 8px 32px rgba(0,0,0,.12)}
       .hero-img-accent{display:none}
       .about-inner{grid-template-columns:1fr;gap:40px}
@@ -193,9 +192,13 @@
       .nav-cta{display:none!important}
       .burger{display:flex}
       .hero{padding-top:100px}
-      .hero-stats{gap:20px}
       .process-steps{grid-template-columns:1fr}
       .footer-inner{flex-direction:column;align-items:flex-start}
+      .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-top:28px;border-top:none;margin-top:8px}
+      .hero-stat-card{background:var(--bg2);border:1px solid var(--bdg);border-radius:14px;padding:16px 10px;text-align:center;position:relative;overflow:hidden}
+      .hero-stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gl))}
+      .h-stat-num{font-size:2rem;font-weight:900;color:var(--dark);font-family:'Playfair Display',serif;line-height:1;display:block}
+      .h-stat-lbl{font-size:.62rem;color:var(--dim);margin-top:6px;letter-spacing:.03em;line-height:1.3;display:block}
     }
     @media(max-width:480px){
       .container{padding:0 18px}
@@ -255,17 +258,17 @@
       <a href="#about" class="btn btn-outline btn-lg" data-ru="О коуче" data-kk="Коуч туралы">О коуче</a>
     </div>
     <div class="hero-stats">
-      <div>
-        <div class="h-stat-num">3</div>
-        <div class="h-stat-lbl" data-ru="ключевые направления" data-kk="негізгі бағыттар">ключевые направления</div>
+      <div class="hero-stat-card">
+        <span class="h-stat-num">3</span>
+        <span class="h-stat-lbl" data-ru="ключевые направления" data-kk="негізгі бағыттар">ключевые направления</span>
       </div>
-      <div>
-        <div class="h-stat-num">2</div>
-        <div class="h-stat-lbl" data-ru="формата работы" data-kk="жұмыс форматы">формата работы</div>
+      <div class="hero-stat-card">
+        <span class="h-stat-num">2</span>
+        <span class="h-stat-lbl" data-ru="формата работы" data-kk="жұмыс форматы">формата работы</span>
       </div>
-      <div>
-        <div class="h-stat-num">1</div>
-        <div class="h-stat-lbl" data-ru="цель — ваш результат" data-kk="мақсат — сіздің нәтиже">цель — ваш результат</div>
+      <div class="hero-stat-card">
+        <span class="h-stat-num">1</span>
+        <span class="h-stat-lbl" data-ru="цель — ваш результат" data-kk="мақсат — сіздің нәтиже">цель — ваш результат</span>
       </div>
     </div>
   </div>
